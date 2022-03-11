@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:Rocket Igniter 9v-cache
+LIBS:Rocket Igniter SMT-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -19,13 +19,14 @@ L Device:D_Schottky D1
 U 1 1 621ADCB0
 P 1900 1500
 F 0 "D1" H 1900 1284 50  0000 C CNN
-F 1 "1N5819-E3/54" H 1900 1375 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 1900 1376 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88525/1n5817.pdf" H 1900 1500 50  0001 C CNN
-F 4 "1N5819-E3/54" H 1900 1500 50  0001 C CNN "Part"
+F 1 "B5819W SL" H 1900 1375 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 1900 1376 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1809140216_Changjiang-Electronics-Tech--CJ-B5819W-SL_C8598.pdf" H 1900 1500 50  0001 C CNN
+F 4 "C8598" H 1900 1500 50  0001 C CNN "Part"
 F 5 "D" H 1900 1500 50  0001 C CNN "Spice_Primitive"
-F 6 "1N5819-E3/54" H 1900 1500 50  0001 C CNN "Spice_Model"
+F 6 "" H 1900 1500 50  0001 C CNN "Spice_Model"
 F 7 "Y" H 1900 1500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 8 "B5819W SL" H 1900 1500 50  0001 C CNN "Manufacturer Part"
 	1    1900 1500
 	-1   0    0    1   
 $EndComp
@@ -37,7 +38,9 @@ F 0 "SW1" H 2550 1735 50  0000 C CNN
 F 1 "M2011S3S1W01" H 2550 1644 50  0000 C CNN
 F 2 "Connector_Wire:SolderWirePad_1x02_P5.08mm_Drill1.5mm" H 2550 1500 50  0001 C CNN
 F 3 "https://www.nkkswitches.com/pdf/MtogglesBushing.pdf" H 2550 1500 50  0001 C CNN
-F 4 "M2011S3S1W01" H 2550 1500 50  0001 C CNN "Part"
+F 4 "" H 2550 1500 50  0001 C CNN "Part"
+F 5 "360-3695-ND" H 2550 1500 50  0001 C CNN "DigiKey Part"
+F 6 "M2011S3S1W01" H 2550 1500 50  0001 C CNN "Manufacturer Part"
 	1    2550 1500
 	1    0    0    -1  
 $EndComp
@@ -49,7 +52,9 @@ F 0 "VR1" H 3750 1742 50  0000 C CNN
 F 1 "AS7805AT-E1" H 3750 1651 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3775 1350 50  0001 L CIN
 F 3 "https://www.diodes.com/assets/Datasheets/AS78XXA.pdf" H 3750 1450 50  0001 C CNN
-F 4 "AS7805AT-E1" H 3750 1500 50  0001 C CNN "Part"
+F 4 "" H 3750 1500 50  0001 C CNN "Part"
+F 5 "AS7805AT-E1DI-ND" H 3750 1500 50  0001 C CNN "DigiKey Part"
+F 6 "AS7805AT-E1" H 3750 1500 50  0001 C CNN "Manufacturer Part"
 	1    3750 1500
 	1    0    0    -1  
 $EndComp
@@ -58,10 +63,14 @@ L Device:CP1 C2
 U 1 1 621B0695
 P 2900 1750
 F 0 "C2" H 3015 1796 50  0000 L CNN
-F 1 "860010572002" H 3015 1705 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm" H 2900 1750 50  0001 C CNN
-F 3 "https://www.we-online.com/katalog/datasheet/860010572002.pdf" H 2900 1750 50  0001 C CNN
-F 4 "860010572002" H 2900 1750 50  0001 C CNN "Part"
+F 1 "10µF" H 3015 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2900 1750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810191219_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf" H 2900 1750 50  0001 C CNN
+F 4 "C19702" H 2900 1750 50  0001 C CNN "Part"
+F 5 "10uF" H 2900 1750 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2900 1750 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "C" H 2900 1750 50  0001 C CNN "Spice_Primitive"
+F 8 "CL10A106KP8NNNC" H 2900 1750 50  0001 C CNN "Manufacturer Part"
 	1    2900 1750
 	1    0    0    -1  
 $EndComp
@@ -80,9 +89,13 @@ L Device:R R2
 U 1 1 621BBF43
 P 5000 1700
 F 0 "R2" H 5070 1746 50  0000 L CNN
-F 1 "220" H 5070 1655 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4930 1700 50  0001 C CNN
-F 3 "~" H 5000 1700 50  0001 C CNN
+F 1 "220Ω" H 5070 1655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4930 1700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF2200T5E_C22962.pdf" H 5000 1700 50  0001 C CNN
+F 4 "C22962" H 5000 1700 50  0001 C CNN "Part"
+F 5 "220" H 5000 1700 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5000 1700 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "R" H 5000 1700 50  0001 C CNN "Spice_Primitive"
 	1    5000 1700
 	1    0    0    -1  
 $EndComp
@@ -94,7 +107,8 @@ F 0 "LED1" V 5039 1932 50  0000 R CNN
 F 1 "Pwr_LED" V 4948 1932 50  0000 R CNN
 F 2 "LED_THT:LED_D5.0mm" H 5000 2050 50  0001 C CNN
 F 3 "https://octopart.com/datasheet/559-2201-003f-dialight-110368" H 5000 2050 50  0001 C CNN
-F 4 "5592201003F" H 5000 2050 50  0001 C CNN "Part"
+F 4 "" H 5000 2050 50  0001 C CNN "Part"
+F 5 "350-2797-ND" H 5000 2050 50  0001 C CNN "DigiKey Part"
 	1    5000 2050
 	0    -1   -1   0   
 $EndComp
@@ -106,7 +120,9 @@ F 0 "J2" H 8230 1592 50  0000 L CNN
 F 1 "1711725" H 8230 1501 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 8200 1560 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1711725.pdf" H 8200 1560 50  0001 C CNN
-F 4 "1711725" H 8150 1600 50  0001 C CNN "Part"
+F 4 "" H 8150 1600 50  0001 C CNN "Part"
+F 5 "277-1027-ND" H 8150 1600 50  0001 C CNN "DigiKey Part"
+F 6 "1711725" H 8150 1600 50  0001 C CNN "Manufacturer Part"
 	1    8150 1600
 	1    0    0    -1  
 $EndComp
@@ -115,9 +131,13 @@ L Device:R R3
 U 1 1 621CE60D
 P 5700 2300
 F 0 "R3" H 5770 2346 50  0000 L CNN
-F 1 "33k" H 5770 2255 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5630 2300 50  0001 C CNN
-F 3 "~" H 5700 2300 50  0001 C CNN
+F 1 "33kΩ" H 5770 2255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5630 2300 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF3302T5E_C4216.pdf" H 5700 2300 50  0001 C CNN
+F 4 "C4216" H 5700 2300 50  0001 C CNN "Part"
+F 5 "33k" H 5700 2300 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5700 2300 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "R" H 5700 2300 50  0001 C CNN "Spice_Primitive"
 	1    5700 2300
 	1    0    0    -1  
 $EndComp
@@ -126,9 +146,13 @@ L Device:R R4
 U 1 1 621CED9F
 P 6100 2300
 F 0 "R4" H 6170 2346 50  0000 L CNN
-F 1 "220" H 6170 2255 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6030 2300 50  0001 C CNN
-F 3 "~" H 6100 2300 50  0001 C CNN
+F 1 "220Ω" H 6170 2255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6030 2300 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF2200T5E_C22962.pdf" H 6100 2300 50  0001 C CNN
+F 4 "C22962" H 6100 2300 50  0001 C CNN "Part"
+F 5 "220" H 6100 2300 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6100 2300 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "R" H 6100 2300 50  0001 C CNN "Spice_Primitive"
 	1    6100 2300
 	1    0    0    -1  
 $EndComp
@@ -140,7 +164,8 @@ F 0 "LED2" V 6139 2532 50  0000 R CNN
 F 1 "Cont_LED" V 6048 2532 50  0000 R CNN
 F 2 "LED_THT:LED_D5.0mm" H 6100 2650 50  0001 C CNN
 F 3 "https://octopart.com/datasheet/559-2301-003f-dialight-1320045" H 6100 2650 50  0001 C CNN
-F 4 "5592301003F" H 6100 2650 50  0001 C CNN "Part"
+F 4 "" H 6100 2650 50  0001 C CNN "Part"
+F 5 "350-2799-ND" H 6100 2650 50  0001 C CNN "DigiKey Part"
 	1    6100 2650
 	0    -1   -1   0   
 $EndComp
@@ -149,9 +174,13 @@ L Device:R R5
 U 1 1 621D1D0C
 P 6300 1650
 F 0 "R5" V 6093 1650 50  0000 C CNN
-F 1 "33k" V 6184 1650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6230 1650 50  0001 C CNN
-F 3 "~" H 6300 1650 50  0001 C CNN
+F 1 "33kΩ" V 6184 1650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6230 1650 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF3302T5E_C4216.pdf" H 6300 1650 50  0001 C CNN
+F 4 "C4216" H 6300 1650 50  0001 C CNN "Part"
+F 5 "33k" H 6300 1650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6300 1650 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "R" H 6300 1650 50  0001 C CNN "Spice_Primitive"
 	1    6300 1650
 	0    1    1    0   
 $EndComp
@@ -163,7 +192,9 @@ F 0 "K1" V 7517 1750 50  0000 C CNN
 F 1 "G5Q-1 DC5" V 7426 1750 50  0000 C CNN
 F 2 "Relay_THT:Relay_SPDT_Omron-G5Q-1" H 8090 1710 50  0001 C CNN
 F 3 "https://components.omron.com/us-en/sites/components.omron.com.us/files/datasheet_pdf/J155-E1.pdf" H 6950 1750 50  0001 C CNN
-F 4 "G5Q-1 DC5" H 6950 1750 50  0001 C CNN "Part"
+F 4 "" H 6950 1750 50  0001 C CNN "Part"
+F 5 "Z12713-ND" H 6950 1750 50  0001 C CNN "DigiKey Part"
+F 6 "G5Q-1 DC5" H 6950 1750 50  0001 C CNN "Manufacturer Part"
 	1    6950 1750
 	0    -1   -1   0   
 $EndComp
@@ -172,10 +203,14 @@ L Device:CP1 C3
 U 1 1 621FB41F
 P 4250 1750
 F 0 "C3" H 4365 1796 50  0000 L CNN
-F 1 "860010572002" H 4365 1705 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm" H 4250 1750 50  0001 C CNN
-F 3 "https://www.we-online.com/katalog/datasheet/860010572002.pdf" H 4250 1750 50  0001 C CNN
-F 4 "860010572002" H 4250 1750 50  0001 C CNN "Part"
+F 1 "10µF" H 4365 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4250 1750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810191219_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf" H 4250 1750 50  0001 C CNN
+F 4 "C19702" H 4250 1750 50  0001 C CNN "Part"
+F 5 "10uF" H 4250 1750 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4250 1750 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "C" H 4250 1750 50  0001 C CNN "Spice_Primitive"
+F 8 "CL10A106KP8NNNC" H 4250 1750 50  0001 C CNN "Manufacturer Part"
 	1    4250 1750
 	1    0    0    -1  
 $EndComp
@@ -189,7 +224,9 @@ F 0 "J1" H 718 1375 50  0000 C CNN
 F 1 "1711725" H 718 1466 50  0000 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 850 1660 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1711725.pdf" H 850 1660 50  0001 C CNN
-F 4 "1711725" H 800 1700 50  0001 C CNN "Part"
+F 4 "" H 800 1700 50  0001 C CNN "Part"
+F 5 "277-1027-ND" H 800 1700 50  0001 C CNN "DigiKey Part"
+F 6 "1711725" H 800 1700 50  0001 C CNN "Manufacturer Part"
 	1    800  1700
 	-1   0    0    1   
 $EndComp
@@ -200,13 +237,14 @@ L Device:CP1 C1
 U 1 1 622418FC
 P 1250 1900
 F 0 "C1" H 1365 1946 50  0000 L CNN
-F 1 "35PX680MEFC10X16" H 1365 1855 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D10.0mm_H16.0mm_P5.00mm" H 1250 1900 50  0001 C CNN
-F 3 "https://www.rubycon.co.jp/wp-content/uploads/catalog-aluminum/PX.pdf" H 1250 1900 50  0001 C CNN
-F 4 "35PX680MEFC10X16" H 1250 1900 50  0001 C CNN "Part"
+F 1 "560µF" H 1365 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_10x10" H 1250 1900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1912111437_Lelon-VZS561M1ETR-1010_C249979.pdf" H 1250 1900 50  0001 C CNN
+F 4 "C249979" H 1250 1900 50  0001 C CNN "Part"
 F 5 "C" H 1250 1900 50  0001 C CNN "Spice_Primitive"
-F 6 "680u" H 1250 1900 50  0001 C CNN "Spice_Model"
+F 6 "560uF" H 1250 1900 50  0001 C CNN "Spice_Model"
 F 7 "Y" H 1250 1900 50  0001 C CNN "Spice_Netlist_Enabled"
+F 8 "VZS561M1ETR-1010" H 1250 1900 50  0001 C CNN "Manufacturer Part"
 	1    1250 1900
 	1    0    0    -1  
 $EndComp
@@ -220,10 +258,10 @@ L Device:R R1
 U 1 1 62246F34
 P 1600 1700
 F 0 "R1" H 1530 1654 50  0000 R CNN
-F 1 "33k" H 1530 1745 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1530 1700 50  0001 C CNN
-F 3 "~" H 1600 1700 50  0001 C CNN
-F 4 "" H 1600 1700 50  0001 C CNN "Part"
+F 1 "33kΩ" H 1530 1745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1530 1700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF3302T5E_C4216.pdf" H 1600 1700 50  0001 C CNN
+F 4 "C4216" H 1600 1700 50  0001 C CNN "Part"
 F 5 "R" H 1600 1700 50  0001 C CNN "Spice_Primitive"
 F 6 "33k" H 1600 1700 50  0001 C CNN "Spice_Model"
 F 7 "Y" H 1600 1700 50  0001 C CNN "Spice_Netlist_Enabled"
@@ -338,7 +376,9 @@ F 0 "Q1" H 5991 1754 50  0000 L CNN
 F 1 "BC327" H 5991 1845 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6000 1725 50  0001 L CIN
 F 3 "http://www.onsemi.com/pub_link/Collateral/BC327-D.PDF" H 5800 1800 50  0001 L CNN
-F 4 "BC327" H 5800 1800 50  0001 C CNN "Part"
+F 4 "" H 5800 1800 50  0001 C CNN "Part"
+F 5 "2156-BC327-FS-ND" H 5800 1800 50  0001 C CNN "DigiKey Part"
+F 6 "BC327" H 5800 1800 50  0001 C CNN "Manufacturer Part"
 	1    5800 1800
 	-1   0    0    1   
 $EndComp
@@ -395,7 +435,9 @@ F 0 "SW3" H 6150 4225 50  0000 C CNN
 F 1 "Y201132C203NQ" H 6150 4134 50  0000 C CNN
 F 2 "Connector_Wire:SolderWirePad_2x02_P5.08mm_Drill1.5mm" H 6150 3900 50  0001 C CNN
 F 3 "https://www.ckswitches.com/media/1381/y.pdf" H 6150 3900 50  0001 C CNN
-F 4 "Y201132C203NQ" H 6150 3900 50  0001 C CNN "Part"
+F 4 "" H 6150 3900 50  0001 C CNN "Part"
+F 5 "CKN11519-ND" H 6150 3900 50  0001 C CNN "DigiKey Part"
+F 6 "Y201132C203NQ" H 6150 3900 50  0001 C CNN "Manufacturer Part"
 	1    6150 3900
 	1    0    0    -1  
 $EndComp
@@ -412,9 +454,13 @@ L Device:R R7
 U 1 1 622DA1E6
 P 6650 4300
 F 0 "R7" H 6720 4346 50  0000 L CNN
-F 1 "220" H 6720 4255 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6580 4300 50  0001 C CNN
-F 3 "~" H 6650 4300 50  0001 C CNN
+F 1 "220Ω" H 6720 4255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6580 4300 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF2200T5E_C22962.pdf" H 6650 4300 50  0001 C CNN
+F 4 "C22962" H 6650 4300 50  0001 C CNN "Part"
+F 5 "220" H 6650 4300 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6650 4300 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "R" H 6650 4300 50  0001 C CNN "Spice_Primitive"
 	1    6650 4300
 	1    0    0    -1  
 $EndComp
@@ -426,7 +472,8 @@ F 0 "LED3" V 6689 4583 50  0000 R CNN
 F 1 "Armed_LED" V 6598 4583 50  0000 R CNN
 F 2 "LED_THT:LED_D5.0mm" H 6650 4700 50  0001 C CNN
 F 3 "https://octopart.com/datasheet/559-2101-003f-dialight-129452" H 6650 4700 50  0001 C CNN
-F 4 "5592101003F" H 6650 4700 50  0001 C CNN "Part"
+F 4 "" H 6650 4700 50  0001 C CNN "Part"
+F 5 "350-2796-ND" H 6650 4700 50  0001 C CNN "DigiKey Part"
 	1    6650 4700
 	0    -1   -1   0   
 $EndComp
@@ -454,10 +501,13 @@ L Diode:1.5KExxCA D2
 U 1 1 622E3CD6
 P 6950 3050
 F 0 "D2" H 6950 3174 50  0000 C CNN
-F 1 "1N6267A-E3/54" H 6950 3175 50  0001 C CNN
-F 2 "Diode_THT:D_DO-15_P10.16mm_Horizontal" H 6950 2850 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 6950 3050 50  0001 C CNN
-F 4 "1N6267A-E3/54" H 6950 3050 50  0001 C CNN "Part"
+F 1 "SMFJ7.0CA" H 6950 3175 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 6950 2850 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2004131005_BORN-SMFJ7-0CA_C511920.pdf" H 6950 3050 50  0001 C CNN
+F 4 "C511920" H 6950 3050 50  0001 C CNN "Part"
+F 5 "Y" H 6950 3050 50  0001 C CNN "Spice_Netlist_Enabled"
+F 6 "D" H 6950 3050 50  0001 C CNN "Spice_Primitive"
+F 7 "SMFJ7.0CA" H 6950 3050 50  0001 C CNN "Manufacturer Part"
 	1    6950 3050
 	1    0    0    -1  
 $EndComp
@@ -495,7 +545,9 @@ F 0 "SW2" H 6050 5785 50  0000 C CNN
 F 1 "RP3502ARED" H 6050 5694 50  0000 C CNN
 F 2 "Connector_Wire:SolderWirePad_1x02_P5.08mm_Drill1.5mm" H 6050 5700 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/E-Switch%20PDFs/RP3502_Series.pdf" H 6050 5700 50  0001 C CNN
-F 4 "RP3502ARED" H 6050 5500 50  0001 C CNN "Part"
+F 4 "" H 6050 5500 50  0001 C CNN "Part"
+F 5 "EG1930-ND" H 6050 5500 50  0001 C CNN "DigiKey Part"
+F 6 "RP3502ARED" H 6050 5500 50  0001 C CNN "Manufacturer Part"
 	1    6050 5500
 	1    0    0    -1  
 $EndComp
@@ -508,9 +560,13 @@ L Device:R R8
 U 1 1 622EC460
 P 6650 5500
 F 0 "R8" V 6443 5500 50  0000 C CNN
-F 1 "1k" V 6534 5500 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6580 5500 50  0001 C CNN
-F 3 "~" H 6650 5500 50  0001 C CNN
+F 1 "1kΩ" V 6534 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6580 5500 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf" H 6650 5500 50  0001 C CNN
+F 4 "C21190" H 6650 5500 50  0001 C CNN "Part"
+F 5 "1k" H 6650 5500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6650 5500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "R" H 6650 5500 50  0001 C CNN "Spice_Primitive"
 	1    6650 5500
 	0    1    1    0   
 $EndComp
@@ -519,9 +575,13 @@ L Device:R R6
 U 1 1 622ECEE6
 P 6300 5850
 F 0 "R6" H 6230 5804 50  0000 R CNN
-F 1 "33k" H 6230 5895 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6230 5850 50  0001 C CNN
-F 3 "~" H 6300 5850 50  0001 C CNN
+F 1 "33kΩ" H 6230 5895 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6230 5850 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF3302T5E_C4216.pdf" H 6300 5850 50  0001 C CNN
+F 4 "C4216" H 6300 5850 50  0001 C CNN "Part"
+F 5 "33k" H 6300 5850 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6300 5850 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "R" H 6300 5850 50  0001 C CNN "Spice_Primitive"
 	1    6300 5850
 	-1   0    0    1   
 $EndComp
@@ -539,10 +599,11 @@ L Device:Q_NPN_EBC Q2
 U 1 1 622F3794
 P 7250 5500
 F 0 "Q2" H 7440 5546 50  0000 L CNN
-F 1 "PN2222ABU" H 7440 5455 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7450 5600 50  0001 C CNN
-F 3 "https://www.onsemi.com/pdf/datasheet/pn2222a-d.pdf" H 7250 5500 50  0001 C CNN
-F 4 "PN2222ABU" H 7250 5500 50  0001 C CNN "Part"
+F 1 "S8050 J3Y" H 7440 5455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7450 5600 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810161230_Changjiang-Electronics-Tech--CJ-S8050-J3Y_C2146.pdf" H 7250 5500 50  0001 C CNN
+F 4 "C2146" H 7250 5500 50  0001 C CNN "Part"
+F 5 "S8050 J3Y" H 7250 5500 50  0001 C CNN "Manufacturer Part"
 	1    7250 5500
 	1    0    0    -1  
 $EndComp
